@@ -1,0 +1,29 @@
+<form method="post" action="/pizza-orders/:id/edit">
+
+
+  <label for="id">ID:</label>
+  <input type="number" name="id" id="id" value=""/>
+
+  <label for="first-name">First Name:</label>
+  <input type="text" name="first_name" id="first-name" value=""/>
+
+
+  <label for="last-name">Last Name:</label>
+  <input type="text" name="last_name" id="last-name"/>
+
+  <label for="pizza_select">Select a pizza:</label>
+  <select id="pizza-select" name="topping">
+    <option value="Margeritha">Margeritha</option>
+    <option value="Havaian">Havaian</option>
+  </select>
+
+  <label for="quantity">Quantity:</label>
+  <input type="number" name="quantity" id="quantity"/>
+
+  <input type="submit" value="Update Order">
+
+</form>
+
+<!-- Your edit route will probably take users to a form, just like the new route. Only this time,
+the form should be populated with the correct data for the order we want to edit.
+Your update route will probably look a lot like the create route! -->
